@@ -1,0 +1,15 @@
+@require 'var'
+@require 'func'
+
+button, textarea, input
+	width 100%
+	box-sizing border-box
+	
+textarea
+	min-height 150px
+	background-color $color-grey-light
+	color $color-grey-dark
+	overflow hidden
+	roundBorder(3)
+	&:hover, &:focus, &:active
+		outline 0
