@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Markupeat Welcome Page</title>
+		<link rel="stylesheet" type="text/css" href="assets/lib/ggrid/ggrid-v0.1.0.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+		<script type="text/javascript" src="../releases/markupeat-v0.1.0.min.js"></script>
+		<script type="text/javascript">
+			function runMarkupeat(){
+				markupeat.init({
+					input: 'mktIn',
+					output: 'mktOut'
+				});
+			}
+		</script>
+	</head>
+	<body onload="markupeat.setCleaner('mktIn')">
+
+		<div class="top-bar">
+			<div class="gg-container">
+				<div class="gg-row gg-voff-3">
+					<div class="gg-col-4 gg-hoff-4">
+						<button onclick="runMarkupeat()" class="btn">
+							Markupeat
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="gg-container gg-voff-4">
+			<div class="gg-row">
+				<div class="gg-col-12">
+					<textarea id="mktIn">
+Insert your HTML/XML to repeat here...
+					</textarea>
+				</div>
+			</div>
+			<div class="gg-row gg-voff-2">
+				<div class="gg-col-12">
+					<textarea id="mktOut">
+...and get your HTML/XML repeated here.
+					</textarea>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>
